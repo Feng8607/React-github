@@ -1,0 +1,535 @@
+@import "../style/Nav/Nav.css";
+@import "../style/Footer/Footer.css";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.Home {
+  width: 100%;
+  min-height: 80vh;
+}
+.Home .navHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(241, 244, 252);
+  width: 100%;
+  box-shadow: 1px 1px 1px rgb(197, 197, 197);
+}
+.Home .navHeader .navContainer {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+}
+.Home .navHeader .navContainer .navTop {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.5rem 0;
+  font-size: 1.5rem;
+  justify-content: space-between;
+}
+.Home .navHeader .navContainer .navTop .topFirst {
+  display: flex;
+  align-items: center;
+}
+.Home .navHeader .navContainer .navTop .topFirst .topIcon {
+  color: black;
+}
+.Home .navHeader .navContainer .navTop .topFirst .topContainer {
+  cursor: pointer;
+  margin: 0 1rem;
+  color: rgb(0, 100, 215);
+}
+.Home .navHeader .navContainer .navTop .topFirst .topContainer:hover {
+  text-decoration: underline;
+}
+.Home .navHeader .navContainer .navTop .topFirst .topPublic {
+  background-color: rgb(236, 236, 236);
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  font-weight: 500;
+  border: 1px solid rgb(222, 222, 222);
+  font-size: 1rem;
+}
+.Home .navHeader .navContainer .navTop .topSecond {
+  display: flex;
+}
+.Home .navHeader .navContainer .navTop .topSecond .button {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  border-radius: 8px;
+  padding: 0.35rem 1rem;
+  border: 1px solid rgb(202, 202, 202);
+  background-color: rgb(246, 246, 246);
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.Home .navHeader .navContainer .navTop .topSecond .button p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+  height: 1rem;
+  margin: 0 0.5rem;
+}
+.Home .navHeader .navContainer .navTop .topSecond .button:hover {
+  background-color: rgb(235, 235, 235);
+}
+.Home .navHeader .navContainer .navTop .topSecond .buttonSum {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+.Home .navHeader .navContainer .navTop .topSecond .buttonSum .buttonFirst {
+  display: flex;
+  margin-left: 0.5rem;
+  padding-left: 0.5rem;
+  border-radius: 8px 0 0 8px;
+  padding: 0.43rem 0.5rem;
+  border: 1px solid rgb(202, 202, 202);
+  background-color: rgb(246, 246, 246);
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.Home .navHeader .navContainer .navTop .topSecond .buttonSum .buttonFirst p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.5rem;
+  width: 1rem;
+  height: 1rem;
+}
+.Home .navHeader .navContainer .navTop .topSecond .buttonSum .buttonFirst:hover {
+  background-color: rgb(222, 222, 222);
+}
+.Home .navHeader .navContainer .navTop .topSecond .buttonSum .buttonSecond {
+  border-left: 1px solid gray;
+  border-radius: 0 8px 8px 0;
+  background-color: rgb(246, 246, 246);
+  cursor: pointer;
+  padding: 0 0.5rem;
+  font-size: 1rem;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid rgb(202, 202, 202);
+}
+.Home .navHeader .navContainer .navTop .topSecond .buttonSum .buttonSecond:hover {
+  background-color: rgb(222, 222, 222);
+}
+.Home .navHeader .navContainer .navTop .topRwd {
+  display: none;
+}
+.Home .navHeader .navContainer .navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Home .navHeader .navContainer .navBar .navbar-xl {
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
+}
+.Home .navHeader .navContainer .navBar .navbar-xl .navGuide,
+.Home .navHeader .navContainer .navBar .navbar-xl .Issues,
+.Home .navHeader .navContainer .navBar .navbar-xl .Pull,
+.Home .navHeader .navContainer .navBar .navbar-xl .Actions,
+.Home .navHeader .navContainer .navBar .navbar-xl .Projects,
+.Home .navHeader .navContainer .navBar .navbar-xl .Security,
+.Home .navHeader .navContainer .navBar .navbar-xl .Insights {
+  display: flex;
+  flex-wrap: nowrap;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem;
+  align-items: center;
+}
+.Home .navHeader .navContainer .navBar .navbar-xl .navGuide:hover,
+.Home .navHeader .navContainer .navBar .navbar-xl .Issues:hover,
+.Home .navHeader .navContainer .navBar .navbar-xl .Pull:hover,
+.Home .navHeader .navContainer .navBar .navbar-xl .Actions:hover,
+.Home .navHeader .navContainer .navBar .navbar-xl .Projects:hover,
+.Home .navHeader .navContainer .navBar .navbar-xl .Security:hover,
+.Home .navHeader .navContainer .navBar .navbar-xl .Insights:hover {
+  border-radius: 8px;
+  background-color: rgb(219, 219, 219);
+}
+.Home .homeContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+.Home .homeContainer .containerBox {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.Home .homeContainer .containerBox .leftContainer {
+  padding-right: 3rem;
+  flex: 4 1 550px;
+}
+.Home .homeContainer .containerBox .leftContainer .leftTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Home .homeContainer .containerBox .leftContainer .leftTop .leftfirst {
+  display: flex;
+  align-items: center;
+}
+.Home .homeContainer .containerBox .leftContainer .leftTop .leftfirst .buttonSum {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  border-radius: 8px;
+  padding: 0.35rem 1rem;
+  border: 1px solid rgb(202, 202, 202);
+  background-color: rgb(246, 246, 246);
+  cursor: pointer;
+}
+.Home .homeContainer .containerBox .leftContainer .leftTop .leftfirst .buttonSum p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.5rem;
+}
+.Home .homeContainer .containerBox .leftContainer .leftTop .leftfirst .button:hover {
+  background-color: rgb(235, 235, 235);
+}
+.Home .homeContainer .containerBox .leftContainer .leftTop .leftfirst .buttonBranch {
+  display: flex;
+  border-radius: 8px;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.Home .homeContainer .containerBox .leftContainer .leftTop .leftfirst .buttonBranch h3 {
+  margin-left: 0.25rem;
+  font-size: 1rem;
+}
+.Home .homeContainer .containerBox .leftContainer .leftTop .leftfirst .buttonBranch:hover {
+  color: rgb(0, 100, 215);
+}
+.Home .homeContainer .containerBox .leftContainer .leftTop .leftSecond {
+  display: flex;
+  align-items: center;
+}
+.Home .homeContainer .containerBox .leftContainer .leftTop .leftSecond .buttonGo,
+.Home .homeContainer .containerBox .leftContainer .leftTop .leftSecond .buttonAdd {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  border-radius: 8px;
+  padding: 0.35rem 1rem;
+  margin-left: 1rem;
+  border: 1px solid rgb(202, 202, 202);
+  background-color: rgb(246, 246, 246);
+  cursor: pointer;
+}
+.Home .homeContainer .containerBox .leftContainer .leftTop .leftSecond .buttonAdd p {
+  margin-right: 0.5rem;
+}
+.Home .homeContainer .containerBox .leftContainer .leftTop .leftSecond .buttonCode {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  border-radius: 8px;
+  padding: 0.35rem 1rem;
+  margin-left: 1rem;
+  border: 1px solid rgb(202, 202, 202);
+  background-color: rgba(0, 170, 50, 0.8);
+  color: #fff;
+  cursor: pointer;
+}
+.Home .homeContainer .containerBox .leftContainer .leftTop .leftSecond .buttonCode p {
+  margin: 0 0.5rem;
+}
+.Home .homeContainer .containerBox .leftContainer .leftTop .leftSecond .buttonCode:hover {
+  background-color: rgb(0, 170, 50);
+}
+.Home .homeContainer .containerBox .leftContainer .leftTop .more {
+  display: none;
+  cursor: pointer;
+}
+.Home .homeContainer .containerBox .leftContainer .containerBody {
+  margin-top: 1.25rem;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 12px;
+}
+.Home .homeContainer .containerBox .leftContainer .containerBody .containerNarrative {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(219, 219, 219);
+}
+.Home .homeContainer .containerBox .leftContainer .containerBody .containerContent {
+  display: flex;
+  padding: 0.5rem;
+  border-bottom: 1px solid rgb(219, 219, 219);
+}
+.Home .homeContainer .containerBox .leftContainer .containerBody .containerNarrative {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background-color: rgb(243, 243, 243);
+}
+.Home .homeContainer .containerBox .leftContainer .containerBody .containerNarrative .NarrativeLeft {
+  display: flex;
+  align-items: center;
+}
+.Home .homeContainer .containerBox .leftContainer .containerBody .containerNarrative .NarrativeLeft .pic {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+.Home .homeContainer .containerBox .leftContainer .containerBody .containerNarrative .NarrativeLeft .pic,
+.Home .homeContainer .containerBox .leftContainer .containerBody .containerNarrative .NarrativeLeft p {
+  margin-right: 1rem;
+}
+.Home .homeContainer .containerBox .leftContainer .containerBody .containerNarrative .NarrativeRight {
+  display: flex;
+  align-items: center;
+}
+.Home .homeContainer .containerBox .leftContainer .containerBody .containerNarrative .NarrativeRight .fileCode:hover,
+.Home .homeContainer .containerBox .leftContainer .containerBody .containerNarrative .NarrativeRight .fileDate:hover,
+.Home .homeContainer .containerBox .leftContainer .containerBody .containerNarrative .NarrativeRight .commits:hover {
+  color: rgb(0, 100, 215);
+  text-decoration: underline;
+}
+.Home .homeContainer .containerBox .leftContainer .containerBody .containerNarrative .NarrativeRight .commits {
+  display: flex;
+  align-items: center;
+}
+.Home .homeContainer .containerBox .leftContainer .containerBody .containerNarrative .NarrativeRight .commits p {
+  margin-left: 0.5rem;
+}
+.Home .homeContainer .containerBox .leftContainer .containerBody .containerNarrative .NarrativeRight .fileCode,
+.Home .homeContainer .containerBox .leftContainer .containerBody .containerNarrative .NarrativeRight .fileDate,
+.Home .homeContainer .containerBox .leftContainer .containerBody .containerNarrative .NarrativeRight .commits {
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.Home .homeContainer .containerBox .leftContainer .containerBody .containerContent .fileTitle {
+  display: flex;
+  flex-basis: 33%;
+}
+.Home .homeContainer .containerBox .leftContainer .containerBody .containerContent .fileTitle p {
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.Home .homeContainer .containerBox .leftContainer .containerBody .containerContent .fileTitle p:hover {
+  color: rgb(0, 100, 215);
+}
+.Home .homeContainer .containerBox .leftContainer .containerBody .containerContent .fileDepiction {
+  flex-basis: 33%;
+  cursor: pointer;
+}
+.Home .homeContainer .containerBox .leftContainer .containerBody .containerContent .fileDepiction:hover {
+  color: rgb(0, 100, 215);
+  text-decoration: underline;
+}
+.Home .homeContainer .containerBox .leftContainer .containerBody .containerContent .fileDate {
+  display: flex;
+  justify-content: end;
+  flex-basis: 33%;
+}
+.Home .homeContainer .containerBox .leftContainer .containerBody .containerContent:hover {
+  background-color: rgb(243, 243, 243);
+}
+.Home .homeContainer .containerBox .leftContainer .containerBody .noneBorder {
+  border-bottom: none;
+}
+.Home .homeContainer .containerBox .leftContainer .readme {
+  margin: 1rem 0 2rem;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 12px;
+  padding: 1rem;
+}
+.Home .homeContainer .containerBox .leftContainer .readme p {
+  line-height: 2.5;
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+.Home .homeContainer .containerBox .rightContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 250px;
+}
+.Home .homeContainer .containerBox .rightContainer div {
+  border-bottom: 1px solid gray;
+}
+.Home .homeContainer .containerBox .rightContainer h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+.Home .homeContainer .containerBox .rightContainer p {
+  margin: 0.75rem 0;
+}
+
+@media screen and (max-width: 880px) {
+  .Home .navHeader .navContainer .navBar .navbar-xl .Insights {
+    display: none;
+  }
+  .Home .navHeader .navContainer .navBar .navbar-lg {
+    display: block;
+  }
+  .Home .navHeader .navContainer .navBar .navbar-lg .navMore {
+    display: block;
+  }
+  .Home .navHeader .navContainer .navBar .navbar-lg ul {
+    display: none;
+  }
+  .Home .navHeader .navContainer .navTop {
+    width: 100%;
+    flex-direction: column;
+  }
+  .Home .navHeader .navContainer .navTop .topFirst .topContainer {
+    font-size: 1rem;
+  }
+  .Home .navHeader .navContainer .navTop .topFirst .topPublic {
+    font-size: 0.5rem;
+  }
+  .Home .navHeader .navContainer .navTop .topSecond {
+    display: none;
+  }
+  .Home .navHeader .navContainer .navTop .topRwd {
+    display: flex;
+    flex-direction: column;
+  }
+  .Home .navHeader .navContainer .navTop .topRwd .Rwd-Sum {
+    display: flex;
+    margin: 1rem 0;
+  }
+  .Home .navHeader .navContainer .navTop .topRwd .Rwd-Sum .buttonStart,
+.Home .navHeader .navContainer .navTop .topRwd .Rwd-Sum .buttonFork {
+    display: flex;
+    font-size: 1rem;
+    margin: 0 0.25rem;
+  }
+  .Home .navHeader .navContainer .navTop .topRwd .Rwd-buttonSum {
+    display: flex;
+    justify-content: space-around;
+  }
+  .Home .navHeader .navContainer .navTop .topRwd .Rwd-buttonSum .buttonStart,
+.Home .navHeader .navContainer .navTop .topRwd .Rwd-buttonSum .buttonEye {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    width: 100%;
+    border-radius: 8px;
+    margin: 0 0.5rem;
+    padding: 0.25rem 0;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .Home .homeContainer .containerBox {
+    width: auto;
+  }
+  .Home .homeContainer .containerBox .leftContainer {
+    padding-right: 0;
+  }
+  .Home .homeContainer .containerBox .leftContainer .leftTop {
+    margin: 0 1rem;
+    margin-bottom: 1rem;
+  }
+  .Home .homeContainer .containerBox .leftContainer .leftTop .moreSum {
+    position: relative;
+  }
+  .Home .homeContainer .containerBox .leftContainer .leftTop .moreSum .more {
+    display: block;
+    background-color: rgb(243, 243, 243);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+  }
+  .Home .homeContainer .containerBox .leftContainer .leftTop .moreSum .leftSecond {
+    position: absolute;
+    flex-direction: column;
+    top: 2.5rem;
+    right: 0;
+    border: 1px solid gray;
+    background-color: rgb(241, 244, 252);
+    align-items: flex-start;
+    border-radius: 8px;
+    display: none;
+    width: 8rem;
+  }
+  .Home .homeContainer .containerBox .leftContainer .leftTop .moreSum .leftSecond .buttonGo,
+.Home .homeContainer .containerBox .leftContainer .leftTop .moreSum .leftSecond .buttonAdd,
+.Home .homeContainer .containerBox .leftContainer .leftTop .moreSum .leftSecond .buttonCode {
+    font-size: 1rem;
+    padding: 0.5rem 0.25rem;
+    border: none;
+    background-color: transparent;
+    color: black;
+    margin-left: 0;
+  }
+  .Home .homeContainer .containerBox .leftContainer .leftTop .moreSum .leftSecond .buttonGo .rwdIcon,
+.Home .homeContainer .containerBox .leftContainer .leftTop .moreSum .leftSecond .buttonAdd .rwdIcon,
+.Home .homeContainer .containerBox .leftContainer .leftTop .moreSum .leftSecond .buttonCode .rwdIcon {
+    display: none;
+  }
+  .Home .homeContainer .containerBox .leftContainer .leftTop .moreSum .leftSecond .buttonCode p {
+    margin: 0;
+  }
+  .Home .homeContainer .containerBox .leftContainer .leftTop .moreSum .leftSecond .buttonGo {
+    border-radius: 0;
+    border-bottom: 1px solid gray;
+  }
+  .Home .homeContainer .containerBox .leftContainer .leftTop .moreSum .leftSecond .buttonCode:hover {
+    background-color: transparent;
+  }
+  .Home .homeContainer .containerBox .leftContainer .leftTop .moreSum .dis {
+    display: block;
+  }
+  .Home .homeContainer .containerBox .leftContainer .leftTop .leftfirst .buttonBranch {
+    display: none;
+  }
+  .Home .homeContainer .containerBox .leftContainer .containerBody {
+    margin: 0 1rem;
+  }
+  .Home .homeContainer .containerBox .leftContainer .containerBody .containerContent {
+    justify-content: space-between;
+  }
+  .Home .homeContainer .containerBox .leftContainer .containerBody .containerContent .fileDepiction {
+    display: none;
+  }
+  .Home .homeContainer .containerBox .leftContainer .containerBody .containerNarrative {
+    font-size: 1rem;
+  }
+  .Home .homeContainer .containerBox .leftContainer .containerBody .containerNarrative .NarrativeLeft {
+    flex-wrap: wrap;
+  }
+  .Home .homeContainer .containerBox .leftContainer .containerBody .containerNarrative .NarrativeLeft .decription {
+    display: none;
+  }
+  .Home .homeContainer .containerBox .leftContainer .containerBody .containerNarrative .NarrativeRight {
+    font-size: 1rem;
+  }
+  .Home .homeContainer .containerBox .leftContainer .containerBody .containerNarrative .NarrativeRight .commits .commitstent {
+    display: none;
+  }
+  .Home .homeContainer .containerBox .leftContainer .containerBody .containerNarrative .NarrativeRight .fileCode {
+    display: none;
+  }
+  .Home .homeContainer .containerBox .leftContainer .readme {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+  .Home .homeContainer .containerBox .leftContainer .readme p {
+    font-size: 1rem;
+  }
+  .Home .homeContainer .containerBox .rightContainer {
+    margin: 1rem 1rem;
+  }
+  .Home .homeContainer .containerBox .rightContainer .Releases {
+    border-bottom: 0;
+  }
+}/*# sourceMappingURL=index.css.map */

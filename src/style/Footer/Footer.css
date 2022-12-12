@@ -1,0 +1,42 @@
+.footerPage {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.footerPage .footerContainer {
+  display: flex;
+  width: 90%;
+  padding: 3rem 0;
+  border-top: 1px solid gray;
+}
+.footerPage .footerContainer .footerFirst {
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+.footerPage .footerContainer .footerSecond {
+  display: flex;
+  flex-basis: 80%;
+  align-items: center;
+  justify-content: space-around;
+}
+.footerPage .footerContainer .footerSecond a {
+  font-size: 0.8rem;
+  color: rgb(42, 42, 255);
+  cursor: pointer;
+  text-decoration: none;
+}
+.footerPage .footerContainer a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 840px) {
+  .footerPage .footerContainer {
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
+  .footerPage .footerContainer .footerSecond {
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+}/*# sourceMappingURL=Footer.css.map */

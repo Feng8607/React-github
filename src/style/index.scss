@@ -1,0 +1,557 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+p {
+  margin-bottom: 0;
+}
+.Home {
+  width: 100%;
+  min-height: 80vh;
+  .navHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 244, 252);
+    width: 100%;
+    box-shadow: 1px 1px 1px rgb(197, 197, 197);
+    .navContainer {
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      .navTop {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1.5rem 0;
+        font-size: 1.5rem;
+        justify-content: space-between;
+        .topFirst {
+          display: flex;
+          align-items: center;
+          .topIcon {
+            color: black;
+          }
+          .topContainer {
+            cursor: pointer;
+            margin: 0 1rem;
+            color: rgb(0, 100, 215);
+          }
+          .topContainer:hover {
+            text-decoration: underline;
+          }
+          .topPublic {
+            background-color: rgb(236, 236, 236);
+            padding: 0.25rem 0.5rem;
+            border-radius: 1rem;
+            font-weight: 500;
+            border: 1px solid rgb(222, 222, 222);
+            font-size: 1rem;
+          }
+        }
+        .topSecond {
+          display: flex;
+          .button {
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+            border-radius: 8px;
+            padding: 0.35rem 1rem;
+            border: 1px solid rgb(202, 202, 202);
+            background-color: rgb(246, 246, 246);
+            margin-left: 2rem;
+            cursor: pointer;
+            p {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 1rem;
+              height: 1rem;
+              margin: 0 0.5rem;
+            }
+          }
+          .button:hover {
+            background-color: rgb(235, 235, 235);
+          }
+          .buttonSum {
+            display: flex;
+            align-items: center;
+            margin-left: 0.5rem;
+            .buttonFirst {
+              display: flex;
+              margin-left: 0.5rem;
+              padding-left: 0.5rem;
+              border-radius: 8px 0 0 8px;
+              padding: 0.43rem 0.5rem;
+              border: 1px solid rgb(202, 202, 202);
+              background-color: rgb(246, 246, 246);
+              align-items: center;
+              font-size: 1rem;
+              cursor: pointer;
+              p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 0.5rem;
+                width: 1rem;
+                height: 1rem;
+              }
+              &:hover {
+                background-color: rgb(222, 222, 222);
+              }
+            }
+            .buttonSecond {
+              border-left: 1px solid gray;
+              border-radius: 0 8px 8px 0;
+              background-color: rgb(246, 246, 246);
+              cursor: pointer;
+              padding: 0 0.5rem;
+              font-size: 1rem;
+              padding: 0.35rem 0.5rem;
+              border: 1px solid rgb(202, 202, 202);
+            }
+            .buttonSecond:hover {
+              background-color: rgb(222, 222, 222);
+            }
+          }
+        }
+        .topRwd {
+          display: none;
+        }
+      }
+      .navBar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .navbar-xl {
+          display: flex;
+          width: 100%;
+          overflow-x: scroll;
+          .navGuide,
+          .Issues,
+          .Pull,
+          .Actions,
+          .Projects,
+          .Security,
+          .Insights {
+            display: flex;
+            flex-wrap: nowrap;
+            cursor: pointer;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            padding: 0.25rem;
+            align-items: center;
+          }
+          .navGuide:hover,
+          .Issues:hover,
+          .Pull:hover,
+          .Actions:hover,
+          .Projects:hover,
+          .Security:hover,
+          .Insights:hover {
+            border-radius: 8px;
+            background-color: rgb(219, 219, 219);
+          }
+        }
+      }
+    }
+  }
+  .homeContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1.5rem;
+    .containerBox {
+      width: 90%;
+      display: flex;
+      flex-wrap: wrap;
+      .leftContainer {
+        padding-right: 3rem;
+        flex: 4 1 550px;
+        .leftTop {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .leftfirst {
+            display: flex;
+            align-items: center;
+            .buttonSum {
+              display: flex;
+              align-items: center;
+              font-size: 1rem;
+              border-radius: 8px;
+              padding: 0.35rem 1rem;
+              border: 1px solid rgb(202, 202, 202);
+              background-color: rgb(246, 246, 246);
+              cursor: pointer;
+              p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 0.5rem;
+              }
+            }
+            .button:hover {
+              background-color: rgb(235, 235, 235);
+            }
+            .buttonBranch {
+              display: flex;
+              border-radius: 8px;
+              margin-left: 1rem;
+              cursor: pointer;
+              h3 {
+                margin-left: 0.25rem;
+                font-size: 1rem;
+              }
+            }
+            .buttonBranch:hover {
+              color: rgb(0, 100, 215);
+            }
+          }
+          .leftSecond {
+            display: flex;
+            align-items: center;
+            .buttonGo,
+            .buttonAdd {
+              display: flex;
+              align-items: center;
+              font-size: 1rem;
+              border-radius: 8px;
+              padding: 0.35rem 1rem;
+              margin-left: 1rem;
+              border: 1px solid rgb(202, 202, 202);
+              background-color: rgb(246, 246, 246);
+              cursor: pointer;
+            }
+            .buttonAdd {
+              p {
+                margin-right: 0.5rem;
+              }
+            }
+            .buttonCode {
+              display: flex;
+              align-items: center;
+              font-size: 1rem;
+              border-radius: 8px;
+              padding: 0.35rem 1rem;
+              margin-left: 1rem;
+              border: 1px solid rgb(202, 202, 202);
+              background-color: rgba(0, 170, 50, 0.8);
+              color: #fff;
+              cursor: pointer;
+              p {
+                margin: 0 0.5rem;
+              }
+              &:hover {
+                background-color: rgba(0, 170, 50, 1);
+              }
+            }
+          }
+          .more {
+            display: none;
+            cursor: pointer;
+          }
+        }
+        .containerBody {
+          margin-top: 1.25rem;
+          border: 1px solid rgb(219, 219, 219);
+          border-radius: 12px;
+          .containerNarrative {
+            padding: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid rgb(219, 219, 219);
+          }
+          .containerContent {
+            display: flex;
+            padding: 0.5rem;
+            border-bottom: 1px solid rgb(219, 219, 219);
+          }
+          .containerNarrative {
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            background-color: rgb(243, 243, 243);
+            .NarrativeLeft {
+              display: flex;
+              align-items: center;
+              .pic {
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+              }
+              .pic,
+              p {
+                margin-right: 1rem;
+              }
+            }
+            .NarrativeRight {
+              display: flex;
+              align-items: center;
+              .fileCode:hover,
+              .fileDate:hover,
+              .commits:hover {
+                color: rgb(0, 100, 215);
+                text-decoration: underline;
+              }
+              .commits {
+                display: flex;
+                align-items: center;
+                p {
+                  margin-left: 0.5rem;
+                }
+              }
+              .fileCode,
+              .fileDate,
+              .commits {
+                margin-left: 1rem;
+                cursor: pointer;
+              }
+            }
+          }
+          .containerContent {
+            .fileTitle {
+              display: flex;
+              flex-basis: 33%;
+              p {
+                margin-left: 1rem;
+                cursor: pointer;
+              }
+              p:hover {
+                color: rgb(0, 100, 215);
+              }
+            }
+            .fileDepiction {
+              flex-basis: 33%;
+              cursor: pointer;
+              &:hover {
+                color: rgb(0, 100, 215);
+                text-decoration: underline;
+              }
+            }
+            .fileDate {
+              display: flex;
+              justify-content: end;
+              flex-basis: 33%;
+            }
+          }
+          .containerContent:hover {
+            background-color: rgb(243, 243, 243);
+          }
+          .noneBorder {
+            border-bottom: none;
+          }
+        }
+        .readme {
+          margin: 1rem 0 2rem;
+          border: 1px solid rgb(219, 219, 219);
+          border-radius: 12px;
+          padding: 1rem;
+          p {
+            line-height: 2.5;
+            padding: 1rem;
+            font-size: 1.25rem;
+          }
+        }
+      }
+      .rightContainer {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 250px;
+        div {
+          border-bottom: 1px solid gray;
+        }
+        h2 {
+          margin-top: 1rem;
+          font-size: 1.5rem;
+        }
+        p {
+          margin: 0.75rem 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width:880px) {
+  .Home {
+    .navHeader {
+      .navContainer {
+        .navBar {
+          .navbar-xl {
+            .Insights {
+              display: none;
+            }
+          }
+          .navbar-lg {
+            display: block;
+            .navMore {
+              display: block;
+            }
+            ul {
+              display: none;
+            }
+          }
+        }
+        .navTop {
+          width: 100%;
+          flex-direction: column;
+          .topFirst {
+            .topContainer {
+              font-size: 1rem;
+            }
+            .topPublic {
+              font-size: 0.5rem;
+            }
+          }
+          .topSecond {
+            display: none;
+          }
+          .topRwd {
+            display: flex;
+            flex-direction: column;
+            .Rwd-Sum {
+              display: flex;
+              margin: 1rem 0;
+              .buttonStart,
+              .buttonFork {
+                display: flex;
+                font-size: 1rem;
+                margin: 0 0.25rem;
+              }
+            }
+            .Rwd-buttonSum {
+              display: flex;
+              justify-content: space-around;
+              .buttonStart,
+              .buttonEye {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid gray;
+                width: 100%;
+                border-radius: 8px;
+                margin: 0 0.5rem;
+                padding: 0.25rem 0;
+                cursor: pointer;
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .homeContainer {
+      .containerBox {
+        width: auto;
+        .leftContainer {
+          padding-right: 0;
+          .leftTop {
+            margin: 0 1rem;
+            margin-bottom: 1rem;
+            .moreSum {
+              position: relative;
+              .more {
+                display: block;
+
+                background-color: rgb(243, 243, 243);
+                padding: 0.5rem 1rem;
+                border-radius: 8px;
+              }
+              .leftSecond {
+                position: absolute;
+                flex-direction: column;
+                top: 2.5rem;
+                right: 0;
+                border: 1px solid gray;
+                background-color: rgb(241, 244, 252);
+                align-items: flex-start;
+                border-radius: 8px;
+                display: none;
+                width: 8rem;
+                .buttonGo,
+                .buttonAdd,
+                .buttonCode {
+                  font-size: 1rem;
+                  padding: 0.5rem 0.25rem;
+                  border: none;
+                  background-color: transparent;
+                  color: black;
+                  margin-left: 0;
+                  .rwdIcon {
+                    display: none;
+                  }
+                }
+                .buttonCode {
+                  p {
+                    margin: 0;
+                  }
+                }
+                .buttonGo {
+                  border-radius: 0;
+                  border-bottom: 1px solid gray;
+                }
+                .buttonCode:hover {
+                  background-color: transparent;
+                }
+              }
+              .dis {
+                display: block;
+              }
+            }
+
+            .leftfirst {
+              .buttonBranch {
+                display: none;
+              }
+            }
+          }
+          .containerBody {
+            margin: 0 1rem;
+            .containerContent {
+              justify-content: space-between;
+              .fileDepiction {
+                display: none;
+              }
+            }
+            .containerNarrative {
+              font-size: 1rem;
+              .NarrativeLeft {
+                flex-wrap: wrap;
+                .decription {
+                  display: none;
+                }
+              }
+              .NarrativeRight {
+                font-size: 1rem;
+                .commits {
+                  .commitstent {
+                    display: none;
+                  }
+                }
+                .fileCode {
+                  display: none;
+                }
+              }
+            }
+          }
+          .readme {
+            font-size: 1rem;
+            p {
+              font-size: 1rem;
+            }
+            margin: 1rem 0;
+          }
+        }
+        .rightContainer {
+          margin: 1rem 1rem;
+          .Releases {
+            border-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+@import "../style/Nav/Nav.css";
+@import "../style/Footer/Footer.css";

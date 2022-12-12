@@ -1,0 +1,155 @@
+.headPage {
+  background-color: rgb(36, 36, 36);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 4rem;
+}
+.headPage .rwdIcons {
+  display: flex;
+}
+.headPage .rwdIcons .rwdIcon {
+  display: none;
+}
+.headPage .headBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+}
+.headPage .headBox .left {
+  display: flex;
+  align-items: center;
+}
+.headPage .headBox .left input {
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 6px;
+  padding: 0.25rem 1rem;
+  color: white;
+  font-size: 1rem;
+  background-color: transparent;
+  margin-right: 1rem;
+}
+.headPage .headBox .left input:focus {
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: white;
+}
+.headPage .headBox .left .navIcon {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+}
+.headPage .headBox .left .navText {
+  margin-bottom: 0;
+  font-size: 1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.headPage .headBox .left .rwdNavText {
+  display: none;
+}
+.headPage .headBox .left .navText:hover {
+  color: rgb(218, 218, 218);
+}
+.headPage .headBox .right {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+.headPage .headBox .right .navText {
+  margin-bottom: 0;
+  font-size: 1rem;
+  margin-left: 1.5rem;
+  cursor: pointer;
+}
+.headPage .headBox .right .navProfot {
+  margin-bottom: 0;
+  font-size: 1rem;
+  margin-left: 1.5rem;
+  cursor: pointer;
+  position: relative;
+}
+.headPage .headBox .right .navProfot img {
+  border-radius: 50%;
+  width: 2rem;
+}
+.headPage .headBox .right .navProfot div {
+  position: absolute;
+  top: -0.25rem;
+  right: -0.25rem;
+  background-color: rgb(87, 79, 236);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 2px solid rgb(36, 36, 36);
+}
+
+@media screen and (max-width: 840px) {
+  .headPage {
+    padding: 1rem;
+    height: 4rem;
+    align-items: flex-start;
+  }
+  .headPage .rwdIcons {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+  }
+  .headPage .rwdIcons .rwdIcon {
+    display: block;
+  }
+  .headPage .headBox {
+    width: 100vw;
+    background-color: rgb(36, 36, 36);
+    flex-direction: column;
+    position: absolute;
+    align-items: flex-start;
+    top: 4rem;
+  }
+  .headPage .headBox .left {
+    display: none;
+  }
+  .headPage .headBox .left .navIcon {
+    display: none;
+  }
+  .headPage .headBox .left .nav_toggler {
+    display: block;
+  }
+  .headPage .headBox .left .navText,
+.headPage .headBox .left .rwdNavText {
+    display: flex;
+    align-items: center;
+  }
+  .headPage .headBox .left .rwdNavText,
+.headPage .headBox .left .navText,
+.headPage .headBox .left input {
+    width: 100%;
+    border-bottom: 1px solid gray;
+  }
+  .headPage .headBox .right {
+    display: none;
+  }
+  .headPage .headBox .nav_active {
+    min-height: 4rem;
+    display: block;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: flex-start;
+    row-gap: 1rem;
+  }
+  .rwdHead {
+    height: 28rem;
+  }
+}
+@media screen and (max-width: 770px) {
+  .left {
+    display: flex;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=Nav.css.map */
